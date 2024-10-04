@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, inital-scale=1.0">
+  <title>Memory Test</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <h1 id="title">A deliberately annoying memory test...</h1>
+
+  <div class="flexContainer">
+    <div class="startGame">
+      <button id="startGameBtn">Start!</button>
+    </div>
+
+    <!-- New gameArea div to hold scores, game-pad, and memory -->
+    <div class="gameArea">
+      <div class="scores">
+        <p>Player Score: <span id="playerScore">0</span></p>
+        <p>Level: <span id="numOfLevels">0</span></p>
+      </div>
+
+      <div class="game-pad">
+        <button class="btn cow" id="cow"></button>
+        <button class="btn donkey" id="donkey"></button>
+        <button class="btn monkey" id="monkey"></button>
+        <button class="btn pig" id="pig"></button>
+      </div>
+
+      <div class="memory">
+        <p>Your memory quality is: <span id="memqual"></span></p>
+        <img id="memimage" src="" alt="">
+      </div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="./memoryGame.js"></script>
+</body>
+
+
+</html>
